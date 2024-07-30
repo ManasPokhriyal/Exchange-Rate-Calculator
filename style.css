@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #a0ebf5, #72ddec); /* Light blue gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.container {
+    background: #fdfcfc;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #004d40; 
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1rem;
+    color: #444; 
+    margin-bottom: 25px;
+}
+
+.exchange-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.currency-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.currency-select, .input-amount {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #004d40; /* Darker border color */
+    border-radius: 8px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 250px;
+    transition: border-color 0.3s;
+    position: relative;
+}
+
+.currency-select:focus, .input-amount:focus {
+    border-color: #00251a; /* Even darker border color on focus */
+    outline: none;
+}
+
+.currency-select option {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.currency-select i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+.swap-btn {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border: none;
+    background-color: #004d40; /* Darker teal for button */
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 0 15px;
+}
+
+.swap-btn:hover {
+    background-color: #00251a; /* Even darker teal on hover */
+}
+
+.swap-btn:active {
+    transform: scale(0.98);
+}
+
+.exchange-rate {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #004d40; /* Darker teal for exchange rate text */
+}

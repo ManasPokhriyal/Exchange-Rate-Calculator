@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Rate Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <img src="money.png" alt="money" class="logo">
+        <h1>Exchange Rate Calculator</h1>
+        <p>Choose the currency and the amounts to get the exchange rates</p>
+        
+        <div class="exchange-box">
+            <div class="currency-input">
+                <select id="currency-one" class="currency-select">
+                    <option value="USD">USD - US</option>
+                    <option value="EUR">EUR - EU</option>
+                    <option value="JPY">JPY - Japan</option>
+                    <option value="GBP">GBP - UK</option>
+                    <option value="AUD">AUD - Australia</option>
+                    <option value="CAD">CAD - Canada</option>
+                    <option value="CHF">CHF - Switzerland</option>
+                    <option value="CNY">CNY - China</option>
+                    <option value="SEK">SEK - Sweden</option>
+                    <option value="NZD">NZD - NZ</option>
+                    <option value="MXN">MXN - Mexico</option>
+                    <option value="SGD">SGD - Singapore</option>
+                    <option value="HKD">HKD - HK</option>
+                    <option value="NOK">NOK - Norway</option>
+                    <option value="KRW">KRW - S. Korea</option>
+                    <option value="TRY">TRY - Turkey</option>
+                    <option value="RUB">RUB - Russia</option>
+                    <option value="INR">INR - India</option>
+                    <option value="BRL">BRL - Brazil</option>
+                    <option value="ZAR">ZAR - S. Africa</option>
+                    <option value="DKK">DKK - Denmark</option>
+                    <option value="PLN">PLN - Poland</option>
+                    <option value="THB">THB - Thailand</option>
+                    <option value="MYR">MYR - Malaysia</option>
+                    <option value="PHP">PHP - Philippines</option>
+                    <option value="IDR">IDR - Indonesia</option>
+                    <option value="CZK">CZK - Czech Rep.</option>
+                    <option value="HUF">HUF - Hungary</option>
+                    <option value="AED">AED - UAE</option>
+                    <option value="COP">COP - Colombia</option>
+                    <option value="CLP">CLP - Chile</option>
+                    <option value="SAR">SAR - Saudi Arabia</option>
+                    <option value="TWD">TWD - Taiwan</option>
+                    <option value="VND">VND - Vietnam</option>
+                    <option value="EGP">EGP - Egypt</option>
+                    <option value="ARS">ARS - Argentina</option>
+                    <option value="PKR">PKR - Pakistan</option>
+                    <option value="QAR">QAR - Qatar</option>
+                    <option value="KES">KES - Kenya</option>
+                    <option value="BDT">BDT - Bangladesh</option>
+                    <option value="LKR">LKR - Sri Lanka</option>
+                    <option value="NGN">NGN - Nigeria</option>
+                    <option value="KZT">KZT - Kazakhstan</option>
+                    <option value="UAH">UAH - Ukraine</option>
+                </select>
+                <input type="number" id="js-input1" value="1" class="input-amount">
+            </div>
+
+            <button id="swap" class="swap-btn">Swap</button>
+            
+            <div class="currency-input">
+                <select id="currency-two" class="currency-select">
+                    <option value="USD">USD - US</option>
+                    <option value="EUR">EUR - EU</option>
+                    <option value="JPY">JPY - Japan</option>
+                    <option value="GBP">GBP - UK</option>
+                    <option value="AUD">AUD - Australia</option>
+                    <option value="CAD">CAD - Canada</option>
+                    <option value="CHF">CHF - Switzerland</option>
+                    <option value="CNY">CNY - China</option>
+                    <option value="SEK">SEK - Sweden</option>
+                    <option value="NZD">NZD - NZ</option>
+                    <option value="MXN">MXN - Mexico</option>
+                    <option value="SGD">SGD - Singapore</option>
+                    <option value="HKD">HKD - HK</option>
+                    <option value="NOK">NOK - Norway</option>
+                    <option value="KRW">KRW - S. Korea</option>
+                    <option value="TRY">TRY - Turkey</option>
+                    <option value="RUB">RUB - Russia</option>
+                    <option value="INR">INR - India</option>
+                    <option value="BRL">BRL - Brazil</option>
+                    <option value="ZAR">ZAR - S. Africa</option>
+                    <option value="DKK">DKK - Denmark</option>
+                    <option value="PLN">PLN - Poland</option>
+                    <option value="THB">THB - Thailand</option>
+                    <option value="MYR">MYR - Malaysia</option>
+                    <option value="PHP">PHP - Philippines</option>
+                    <option value="IDR">IDR - Indonesia</option>
+                    <option value="CZK">CZK - Czech Rep.</option>
+                    <option value="HUF">HUF - Hungary</option>
+                    <option value="AED">AED - UAE</option>
+                    <option value="COP">COP - Colombia</option>
+                    <option value="CLP">CLP - Chile</option>
+                    <option value="SAR">SAR - Saudi Arabia</option>
+                    <option value="TWD">TWD - Taiwan</option>
+                    <option value="VND">VND - Vietnam</option>
+                    <option value="EGP">EGP - Egypt</option>
+                    <option value="ARS">ARS - Argentina</option>
+                    <option value="PKR">PKR - Pakistan</option>
+                    <option value="QAR">QAR - Qatar</option>
+                    <option value="KES">KES - Kenya</option>
+                    <option value="BDT">BDT - Bangladesh</option>
+                    <option value="LKR">LKR - Sri Lanka</option>
+                    <option value="NGN">NGN - Nigeria</option>
+                    <option value="KZT">KZT - Kazakhstan</option>
+                    <option value="UAH">UAH - Ukraine</option>
+                </select>
+                <input type="number" id="js-input2" value="1" class="input-amount">
+            </div>
+        </div>
+
+        <div id="text" class="exchange-rate">Exchange Rate: </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
