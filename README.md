@@ -5,5 +5,5 @@ Features
 Real-Time Conversion: Provides up-to-date exchange rates.
 Extensive Currency Options: Includes a broad range of currencies.
 Responsive Design: Ensures accessibility on all devices.
-For more details, <a href="https://your-link-here" style="color: blue;">click here</a>.
+For more details, <a href="https://manaspokhriyal.github.io/Exchange-Rate-Calculator/" style="color: blue;">click here</a>.
 
